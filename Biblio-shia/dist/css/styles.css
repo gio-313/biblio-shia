@@ -1,0 +1,10 @@
+.hero {
+    background: url('https://via.placeholder.com/1920x500') no-repeat center center;
+    background-size: cover;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

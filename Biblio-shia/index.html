@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Découvrez notre bibliothèque en ligne avec des millions de livres à explorer.">
+      <title>Bibliothèque en Ligne - Votre Source de Lecture Préférée</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <script type="module" src="fi"></script>
+      <script src="script1.js"></script>
+  </head>
+<body>
+    <!-- Navbar avec barre de recherche -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: rgb(66, 172, 30);border:currentColor;">Biblio-shia en ligne</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home" style="text-align:justify;">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#books">Livres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+        
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-white text-center py-5" style="background-image: url('assets/couverture/hero-image.jpg.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1 class="display-4">Bienvenue dans notre Bibliothèque en Ligne</h1>
+            <p class="lead">Explorez des millions de livres et trouvez votre prochaine lecture favorite.</p>
+            <a href="#books" class="btn btn-light btn-lg">Découvrez nos livres</a>
+        </div>
+    </header>
+                <form class="d-flex flex-column flex-sm-row" id="searchForm" style="margin: 20px auto; width: 90%; max-width: 600px;">
+                    <input class="form-control mb-2 mb-sm-0 me-sm-2" type="search" placeholder="Rechercher un livre" aria-label="Search" id="searchInput">
+                    <button class="btn btn-outline-light" style="background-color:thistle;" type="submit">Rechercher</button>
+                </form>
+    <!-- Books Section -->
+    <section id="books" class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-4" style="background-color: rgb(43, 154, 84);">Nos Livres disponibles</h1>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="bookContainer">
+                <!-- Les cartes de livres seront générées dynamiquement ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contactez-nous si vous avez des livres pour mettre ici </h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Bibliothèque chiite en Ligne by Georgio Jaabir . Tous droits réservés.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
